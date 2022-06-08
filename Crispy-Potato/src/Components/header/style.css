@@ -1,0 +1,85 @@
+body {
+  background-image: url('../../assets/Background.png') !important;
+  background: #121829;
+  font-family: 'Poppins';
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.z-header {
+  z-index: 100;
+  right: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.head {
+  height: 80px;
+  background: rgba(18, 24, 41, 0.8);
+  backdrop-filter: blur(40px);
+  padding: 16px;
+  backdrop-filter: blur(40px);
+}
+
+.nav-item {
+  display: inline-block;
+  position: relative;
+  margin: 0px 16px;
+  color: #A8AEBF;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.nav-item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #A8AEBF;
+  transform-origin: bottom right;
+  transition: transform 0.75s ease-out;
+}
+
+.nav-item:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.flex {
+  display: flex;
+}
+
+.content-just-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#logo {
+  width: 80px;
+  height: auto;
+} 
